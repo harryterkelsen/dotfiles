@@ -43,7 +43,7 @@ def install_dotfile(system_path, repo_path):
 
 
 def install_dotfiles():
-    install_dotfile(os.path.join(HOME, '.zshrc'), 'zshrc')
+    install_dotfile(os.path.join(HOME, '.zshrc'), '.zshrc')
     install_dotfile(os.path.join(HOME, '.config', 'kitty', 'kitty.conf'), 'kitty.conf')
     install_dotfile(os.path.join(HOME, '.config', 'kitty', 'lunar.conf'), 'lunar.conf')
     install_dotfile(os.path.join(HOME, '.config', 'lvim', 'config.lua'), 'config.lua')

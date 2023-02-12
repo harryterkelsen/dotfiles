@@ -171,7 +171,7 @@ lvim.plugins = {
     },
     {
       "dracula/vim",
-      as = "dracula"
+      name = "dracula"
     },
 }
 

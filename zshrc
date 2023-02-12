@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=lvim
+alias s="kitty +kitten ssh"
 
 ## Exa aliases
 alias l='exa'

@@ -59,6 +59,13 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 }
+lvim.builtin.which_key.mappings["w"] = {
+  name = "+Vimwiki",
+  w = { "<cmd>VimwikiIndex<cr>", "Open Index"},
+  t = { "<cmd>VimwikiMakeDiaryNote<cr>", "Open Today in Diary"},
+  y = { "<cmd>VimwikiMakeYesterdayDiaryNote<cr>", "Open Yesterday in Diary"},
+  m = { "<cmd>VimwikiMakeTomorrowDiaryNote<cr>", "Select Tomorrow in Diary"},
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -173,7 +180,18 @@ lvim.plugins = {
       "dracula/vim",
       name = "dracula"
     },
+    { "vimwiki/vimwiki" },
 }
+
+-- Vimwiki setup
+vim.g.vimwiki_list = {
+  {
+    path = '~/Projects/notes',
+    syntax = 'markdown',
+    ext = '.md',
+  },
+}
+vim.g.vimwiki_key_mappings = { global = 0 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {

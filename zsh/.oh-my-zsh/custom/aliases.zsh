@@ -1,0 +1,1 @@
+alias unstow='stow --delete'

@@ -5,3 +5,5 @@
 	name = Harry Terkelsen
 [commit]
 	gpgsign = true
+[core]
+	editor = nvim

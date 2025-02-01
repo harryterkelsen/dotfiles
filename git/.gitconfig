@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = harry.terkelsen@gmail.com
+	name = Harry Terkelsen
+[commit]
+	gpgsign = true

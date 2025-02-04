@@ -7,3 +7,7 @@
 	gpgsign = true
 [core]
 	editor = nvim
+[merge]
+	tool = nvimdiff
+[diff]
+	tool = nvimdiff

@@ -3,6 +3,7 @@
 [user]
 	email = harry.terkelsen@gmail.com
 	name = Harry Terkelsen
+	signingkey = 5B2EB1608FEFDF74
 [commit]
 	gpgsign = true
 [core]

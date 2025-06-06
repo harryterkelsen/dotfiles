@@ -1,7 +1,7 @@
 # dotfiles
 
-A repo containing my dotfiles and a helpful script for setting up my
-preferred development environment.
+A repo containing my dotfiles for setting up my preferred development
+environment.
 
 ## Install
 

@@ -7,7 +7,7 @@ preferred development environment.
 
 ```bash
 stow zsh
+stow gnupg
 stow nvim
 stow kitty
 ```
-

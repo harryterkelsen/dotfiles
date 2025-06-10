@@ -1,3 +1,3 @@
 if [[ $(uname) == "Darwin" ]]; then
-  export PATH="$HOME/homebrew/bin:$PATH"
+  export PATH="/opt/homebrew/bin:$HOME/homebrew/bin:$PATH"
 fi

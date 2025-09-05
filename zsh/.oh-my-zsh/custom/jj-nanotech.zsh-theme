@@ -22,5 +22,13 @@ jj_prompt_info() {
   echo "%F{yellow}${branch}${repo_status}%f"
 }
 
-PROMPT='%F{green}%2c%F{blue} [%f '
+gemini_prompt_info() {
+  if [ "$GEMINI_CONTEXT" = "corporate" ]; then
+    echo "%F{green}●%f"
+  else
+    echo "%F{blue}●%f"
+  fi
+}
+
+PROMPT='%F{green}%2c %F{blue}[$(gemini_prompt_info)%F{blue}]%f '
 RPROMPT='$(jj_prompt_info) %F{blue}] %F{green}%D{%L:%M} %F{yellow}%D{%p}%f'

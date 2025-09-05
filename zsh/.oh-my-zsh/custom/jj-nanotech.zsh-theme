@@ -9,11 +9,14 @@ jj_prompt_info() {
 
   local branch
   branch=$(jj log --no-graph -r @ -T 'description')
+  if [ -z "$branch" ]; then
+    branch="(no description set)"
+  fi
   local repo_status
-  if jj st --quiet; then
-    repo_status=""
-  else
+  if jj status | grep -q "Working copy changes"; then
     repo_status="%F{red}*%f"
+  else
+    repo_status=""
   fi
 
   echo "%F{yellow}${branch}${repo_status}%f"

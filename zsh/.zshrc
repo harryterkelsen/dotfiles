@@ -3,7 +3,7 @@ export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="random"
+ZSH_THEME="jj-nanotech"
 
 plugins=(git gpg-agent)
 

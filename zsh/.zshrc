@@ -8,3 +8,6 @@ ZSH_THEME="jj-nanotech"
 plugins=(git gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
+
+# Added by Jetski
+export PATH="/Users/het/.jetski/jetski/bin:$PATH"

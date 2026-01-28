@@ -8,4 +8,3 @@ ZSH_THEME="random"
 plugins=(git gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
-
